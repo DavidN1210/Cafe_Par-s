@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+
+    <h1>Café París</h1>
+    <p id="eslogan">Un momento de relax</p>
+    <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="carta.html">Nuestra carta</a></li>
+        <li><a href="contacto.html">Contacte con nosotros</a></li>
+    </ul>
+    <h2>Contacte con nosotros</h2>
+
+    <form action="procesacontacto.php" method="get">
+        <fieldset>
+
+            <p>
+                <label for="Nom">Nombre y Apellidos:</label>
+                <input type="text" name="nombre" id="Nom" required placeholder="">
+            </p>
+
+            <p>
+                <label for="fec">Fecha de Nacimiento:</label>
+                <input type="date" id="fec" name="fec" required>
+            </p>
+
+            <p>
+                <label for="">Suele consumir:</label>
+                <label for="con1">Café</label>
+                <input type="radio" name="con1" id="con1">
+            
+            
+                <label for="con1">Té</label>
+                <input type="radio" name="con1" id="con1">
+            
+            
+                <label for="con1">Ambos</label>
+                <input type="radio" name="con1" id="con1">
+            </p>
+
+            <p>
+                <label for="num">Número de cafés al día</label>
+                <input type="number" id="num" name="num" min="1" max="5">
+            </p>
+
+            <p>
+                <label for="lug">Seleccione su cafetería</label>
+                <select name="lug" id="lug">
+                    <option value="Madrid" selected>Madrid</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Sevilla">Sevilla</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="nov">Deseo recibir información sobre novedades y ofertas</label>
+                <input type="checkbox" name="nov" id="nov" checked>
+            </p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+
+            
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
